@@ -39,7 +39,7 @@ b$1<-c
 b$2<-d
 b$3<-e
 view(b)
-#![image](https://user-images.githubusercontent.com/54986652/108913407-f5dcc880-763a-11eb-97e8-9004da37cf61.png)
+![image](https://user-images.githubusercontent.com/54986652/108913407-f5dcc880-763a-11eb-97e8-9004da37cf61.png)
 
 
 ####bonus#####
@@ -53,5 +53,5 @@ ungroup() %>%
 pivot_wider(id_cols = id, names_from = condition, values_from = `mean(acc)`) %>% select(-id) # #sometimes after first tidying, the column name may change into the `mean(acc)` instead of acc.
 
 
-#![image](https://user-images.githubusercontent.com/54986652/108914119-f88bed80-763b-11eb-9a6a-362addaa6b14.png)
+![image](https://user-images.githubusercontent.com/54986652/108914119-f88bed80-763b-11eb-9a6a-362addaa6b14.png)
 
