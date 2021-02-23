@@ -39,19 +39,21 @@ b$1<-c
 b$2<-d
 b$3<-e
 view(b)
-![image](https://user-images.githubusercontent.com/54986652/108913407-f5dcc880-763a-11eb-97e8-9004da37cf61.png)
+
+# check this image for result https://user-images.githubusercontent.com/54986652/108913407-f5dcc880-763a-11eb-97e8-9004da37cf61.png
 
 
 ####bonus#####
 ##easy way with tidyverse#####
 
-
+df<-eprimefile%>%group_by(subject,condition)%>%summarise(mean(acc))
 acclast<-df %>%
 group_by(condition) %>% 
 mutate(id = subject) %>% 
 ungroup() %>% 
-pivot_wider(id_cols = id, names_from = condition, values_from = `mean(acc)`) %>% select(-id) # #sometimes after first tidying, the column name may change into the `mean(acc)` instead of acc.
+pivot_wider(id_cols = id, names_from = condition, values_from = `mean(acc)`) %>% # sometimes after first tidying, the column name may change into the `mean(acc)` instead of acc.
+select(-id)
 
 
-![image](https://user-images.githubusercontent.com/54986652/108914119-f88bed80-763b-11eb-9a6a-362addaa6b14.png)
+# ok now check this. (and it has all conditions it's superb easy code!!! https://user-images.githubusercontent.com/54986652/108914119-f88bed80-763b-11eb-9a6a-362addaa6b14.png )
 
