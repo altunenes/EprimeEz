@@ -55,5 +55,5 @@ pivot_wider(id_cols = id, names_from = condition, values_from = `mean(acc)`) %>%
 select(-id)
 
 
-# ok now check this. (and it has all conditions it's superb easy code!!! https://user-images.githubusercontent.com/54986652/108914119-f88bed80-763b-11eb-9a6a-362addaa6b14.png )
+# ok now check this. (and it has all conditions it's easy:  https://user-images.githubusercontent.com/54986652/108914119-f88bed80-763b-11eb-9a6a-362addaa6b14.png )
 
